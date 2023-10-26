@@ -1,0 +1,39 @@
+.full{
+    background-color: #F5F6F7;
+    
+    
+}
+.main{
+    width: 50%;
+    margin: auto;
+}
+.course{
+     border: 1px solid #1B1B32;
+    margin: 10px;
+    /* width: 50%; */
+    height: 50px;
+    /* margin: auto; */
+    background-color: #D0D0D5;
+  
+}
+.course_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1B1B32;
+    gap:10px;
+    padding:5px
+}
+.image{
+    display: flex;
+    width: 5%;
+    color: #1B1B32;
+    align-items: center;
+
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+ color: #1B1B32;
+}
