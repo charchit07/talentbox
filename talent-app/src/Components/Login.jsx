@@ -25,7 +25,7 @@ import {
         email,
         password,
       };
-      fetch("http://localhost:7500/users/login", {
+      fetch("https://charming-kit-wasp.cyclic.app/users/login", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

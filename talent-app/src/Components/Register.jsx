@@ -35,7 +35,7 @@ const Register = () => {
       email,
       password,
     };
-    fetch("http://localhost:7500/users/register", {
+    fetch("https://charming-kit-wasp.cyclic.app/users/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

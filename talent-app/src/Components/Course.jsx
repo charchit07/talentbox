@@ -6,7 +6,7 @@ const Course = () => {
   const [course, setCourse] = useState("");
 
   const getData = () => {
-    fetch("http://localhost:7500/course", {
+    fetch("https://charming-kit-wasp.cyclic.app/course", {
       headers: {
         Authorization: localStorage.getItem("token"),
       },
