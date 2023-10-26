@@ -3,8 +3,7 @@ import { Routes, Route} from "react-router-dom";
 import { Home } from './Home';
 import { Register } from './Register';
 import { Login } from './Login';
-import { AllNotes } from './Course';
-
+import { Course } from './Course';
 
 const AllRoutes=()=> {
   return (
@@ -13,7 +12,7 @@ const AllRoutes=()=> {
         <Route path="/" element={<Home/>} />
         <Route path="/signup" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/course" element={<AllNotes/>} />
+        <Route path="/course" element={<Course/>} />
     
       </Routes>
     </div>

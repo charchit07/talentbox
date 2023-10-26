@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import style from "../Styles/Course.module.css";
 import Last from "./Last";
 
-const AllNotes = () => {
-  const [notes, setNote] = useState("");
+const Course = () => {
+  const [course, setCourse] = useState("");
 
   const getData = () => {
     fetch("http://localhost:7500/course", {
@@ -14,7 +14,7 @@ const AllNotes = () => {
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
-        setNote(res);
+        setCourse(res);
       })
       .catch((err) => console.log(err));
   };
@@ -26,8 +26,8 @@ const AllNotes = () => {
     <>
       <div className={style.full}>
         <Last />
-        {notes ? (
-          notes.map((el) => {
+        {course ? (
+          course.map((el) => {
             return (
               <div className={style.main}>
                 <div key={el._id} className={style.course}>
@@ -46,10 +46,10 @@ const AllNotes = () => {
             );
           })
         ) : (
-          <h1>No Notes</h1>
+          <h1>No course</h1>
         )}
       </div>
     </>
   );
 };
-export { AllNotes };
+export { Course };
